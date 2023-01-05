@@ -12,7 +12,7 @@
     margin: 0;
 }
 
-h1, p, ul li, a{
+h1, h2, h3, p, ul li, a{
     font-family: var(--main-font);
     color: var(--white);
     line-height: 168%;
@@ -21,6 +21,25 @@ h1, p, ul li, a{
 .left {
     border-right: 1px solid var(--white);
     padding-right: 50px;
+}
+.right {
+    padding-top: 50px;
+    padding-left: 50px;
+}
+.projects-container {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+.project {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    max-width: 800px;
+}
+.project img {
+    width: 300px;
+    border-radius: 5px;
 }
 .left img {
     display: block;
@@ -43,7 +62,6 @@ h1, p, ul li, a{
 main {
     display: grid;
     grid-template-columns: 350px 1fr;
-    width: 100vw;
     height: 100vh;
     background-color: var(--bg-color);
     padding: 0px 70px;
@@ -56,4 +74,5 @@ main {
     color: var(--white);
     font-size: 18px;
     margin-right: 10px;
+    margin-top: 10px;
 }

@@ -1,0 +1,18 @@
+{
+    "projects":[
+        {
+            "name": "National Park app",
+            "img": "./src/national_app.png",
+            "description": "The National Park Finder application allows the user to locate all the National Parks in every state, and also see the contact information along with the openning hours. The purpose of this application was to practice ARCgis module.",
+            "link": "https://ronaldcoe.github.io/national-park/",
+            "technologies": "JavaScript, ARCgis, HTML, CSS, National Park Service API"
+        },
+        {
+            "name": "Task Manager App",
+            "img": "./src/task_manager.png",
+            "description":"I built this app with the intention of learning Node.js, JavaScript, and MongoDB. This was the first time using these tools. This application allows the user to keep track of his or her tasks. I wanted to make a simple app that would be easy to use and very intuitive.",
+            "link": "https://github.com/ronaldcoe/tasks_manager",
+            "technologies": "Node, HTML, CSS, MongoDB"
+        }
+    ]
+}
