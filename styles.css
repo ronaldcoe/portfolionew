@@ -84,7 +84,7 @@ main {
         grid-template-columns: 1fr;
         padding: 20px 20px;
         height: auto;
-        width: 100%;
+
     }
     .left {
         padding: 0px;
@@ -92,5 +92,12 @@ main {
     }
     .project {
         flex-direction: column;
+    }
+    .social {
+        position: relative;
+        padding-top: 50px;
+    }
+    .right {
+        padding: 0px;
     }
 }
