@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Advent+Pro:wght@400;700&display=swap');
+
+:root {
+    --bg-color: #262A2E;
+    --white: #FEFEFE;
+    --pink:#EAD0FF;
+    --green: #D0FFE9;
+    --main-font: "Advent Pro"
+}
+
+* {
+    margin: 0;
+}
+
+h1, p, ul li, a{
+    font-family: var(--main-font);
+    color: var(--white);
+    line-height: 168%;
+    letter-spacing: 2px 
+}
+.left {
+    border-right: 1px solid var(--white);
+    padding-right: 50px;
+}
+.left img {
+    display: block;
+    margin: auto;
+    padding-top: 70px;
+
+}
+.accent-pink {
+    background-color: var(--pink);
+    color: #262A2E;
+    padding: 4px;
+    font-weight: bold;
+    font-size: 19px;
+}
+.accent-green {
+    background-color: var(--green);
+    color: #262A2E;
+    padding: 4px;
+}
+main {
+    display: grid;
+    grid-template-columns: 350px 1fr;
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--bg-color);
+    padding: 0px 70px;
+}
+.social {
+    position: absolute;
+    bottom: 40px;
+}
+.social i {
+    color: var(--white);
+    font-size: 18px;
+    margin-right: 10px;
+}
