@@ -16,6 +16,7 @@ function displayProjects(projects) {
     h3.target = "_blank"
     p.textContent = projects.description;
     tech.textContent = projects.technologies;
+    tech.className = "tech"
 
     divText.appendChild(h3);
     divText.appendChild(tech);

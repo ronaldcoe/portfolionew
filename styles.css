@@ -23,13 +23,20 @@ h1, h2, h3, p, ul li, a{
     padding-right: 50px;
 }
 .right {
-    padding-top: 50px;
+
     padding-left: 50px;
+    height: 100vh;
+
+    overflow-y: scroll;
+}
+.right h1 {
+    padding-top: 50px;
 }
 .projects-container {
     display: flex;
     flex-direction: column;
     gap: 40px;
+    
 }
 .project {
     display: flex;
@@ -40,6 +47,14 @@ h1, h2, h3, p, ul li, a{
 .project img {
     width: 300px;
     border-radius: 5px;
+}
+.project a {
+    font-size: 20px;
+}
+.tech {
+    color: #0fcc74;;
+    font-size: 12px;
+    padding: 10px 0px;
 }
 .left img {
     display: block;
@@ -64,7 +79,7 @@ main {
     grid-template-columns: 350px 1fr;
     height: 100vh;
     background-color: var(--bg-color);
-    padding: 0px 70px;
+    padding: 0px 0px 0px 70px;
 }
 .social {
     position: absolute;
@@ -80,7 +95,7 @@ main {
 
 @media screen and (max-width:700px) {
     main {
-        grid-template-rows: 1fr 1fr ;
+        grid-template-rows: auto 1fr ;
         grid-template-columns: 1fr;
         padding: 20px 20px;
         height: auto;
