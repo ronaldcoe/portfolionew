@@ -39,3 +39,21 @@ async function getProjects(url) {
 
 
 getProjects(urlPorjects)
+
+
+
+function hideLeft() {
+    let bar = document.querySelector(".left");
+    let main = document.querySelector("main")
+    let style = window.getComputedStyle(bar)
+    if (style.display == "block") {
+        bar.style.display = "none"
+        main.style.gridTemplateColumns = "1fr"
+    } else  {
+        bar.style.display = "block";
+        main.style.gridTemplateColumns = "350px 1fr"
+    }
+}
+
+
+document.querySelector(".arrow").addEventListener("click", hideLeft)
