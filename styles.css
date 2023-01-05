@@ -15,7 +15,13 @@ body {
     background-color: var(--bg-color);
 }
 .arrow {
-    float: right;
+    width: 15px;
+    position: absolute;
+    top: 20px;
+    left: 400px;
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+    cursor: pointer;
 }
 h1, h2, h3, p, ul li, a{
     font-family: var(--main-font);
@@ -25,7 +31,8 @@ h1, h2, h3, p, ul li, a{
 }
 .left {
     border-right: 1px solid var(--white);
-    padding-right: 50px;
+    padding-right: 70px;
+    padding-left: 70px;
 }
 .right {
 
@@ -51,6 +58,7 @@ h1, h2, h3, p, ul li, a{
 }
 .project img {
     width: 300px;
+    height: 185px;
     border-radius: 5px;
 }
 .project a {
@@ -69,36 +77,33 @@ h1, h2, h3, p, ul li, a{
 }
 .accent-pink {
     background-color: var(--pink);
-    color: #262A2E;
+    color: var(--bg-color);
     padding: 4px;
-    font-weight: bold;
     font-size: 19px;
 }
 .accent-green {
     background-color: var(--green);
-    color: #262A2E;
+    color: var(--bg-color);
     padding: 4px;
 }
 main {
     display: grid;
-    grid-template-columns: 350px 1fr;
+    grid-template-columns: 440px 1fr;
     height: 100vh;
     background-color: var(--bg-color);
-    padding: 0px 0px 0px 70px;
 }
 .social {
     position: absolute;
     bottom: 40px;
+   
 }
-.social i {
-    color: var(--white);
-    font-size: 18px;
-    margin-right: 10px;
+.social svg {
     margin-top: 10px;
+    cursor: pointer;
 }
 
 
-@media screen and (max-width:700px) {
+@media screen and (max-width:1000px) {
     main {
         grid-template-rows: auto 1fr ;
         grid-template-columns: 1fr;
@@ -119,5 +124,10 @@ main {
     }
     .right {
         padding: 0px;
+        height: fit-content;
+        overflow: hidden;
+    }
+    .arrow {
+        display: none;
     }
 }

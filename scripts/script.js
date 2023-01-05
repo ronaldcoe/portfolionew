@@ -44,14 +44,20 @@ getProjects(urlPorjects)
 
 function hideLeft() {
     let bar = document.querySelector(".left");
-    let main = document.querySelector("main")
-    let style = window.getComputedStyle(bar)
+    let main = document.querySelector("main");
+    let style = window.getComputedStyle(bar);
+    let arrow = document.querySelector(".arrow");
+
     if (style.display == "block") {
         bar.style.display = "none"
         main.style.gridTemplateColumns = "1fr"
+        arrow.style.transform = "scaleX(1)"
+        arrow.style.left = "10px"
     } else  {
         bar.style.display = "block";
-        main.style.gridTemplateColumns = "350px 1fr"
+        main.style.gridTemplateColumns = "440px 1fr"
+        arrow.style.transform = "scaleX(-1)"
+        arrow.style.left = "400px"
     }
 }
 
