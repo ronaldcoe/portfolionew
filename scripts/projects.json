@@ -27,6 +27,13 @@
             "description":"This is a game made using Arcade library for Python. The game is very simple. The player is a spacehip. Yo can move left, right, up and down. The objective is to destroy as many metiorids as you can using the space key shooting lasers.",
             "link": "https://github.com/ronaldcoe/python-arcade-game",
             "technologies": "Python, Arcade"
+        },
+        {
+            "name": "CrossDrop",
+            "img": "./src/crossdrop.png",
+            "description":"This was a competition where I and my friends coded a website for the school's food venue. The purpose of the website was to let students order their food online and avoid lines to pay for it.",
+            "link": "https://github.com/Lakeram21/2022Hackaton",
+            "technologies": "React, MongoDB, Express, Nodejs"
         }
     ]
 }
