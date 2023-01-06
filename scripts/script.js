@@ -1,4 +1,4 @@
-const urlPorjects = "./scripts/projects.json";
+const urlPorjects = "https://ronaldcoe.github.io/sourcesportfolio/portfolio.json";
 
 function displayProjects(projects) {
     let container = document.querySelector(".projects-container");
