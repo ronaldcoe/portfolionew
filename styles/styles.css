@@ -37,7 +37,7 @@ h1, h2, h3, p, ul li, a{
 .right {
 
     padding-left: 50px;
-    height: 100vh;
+ 
 
     overflow-y: scroll;
 }
@@ -47,7 +47,8 @@ h1, h2, h3, p, ul li, a{
 .projects-container {
     display: flex;
     flex-direction: column;
-    gap: 40px;
+    gap: 60px;
+    margin-bottom: 100px;
     
 }
 .project {
