@@ -91,7 +91,7 @@ main {
     display: grid;
     grid-template-columns: 440px 1fr;
     height: 100vh;
-    background-color: var(--bg-color);
+
 }
 .social {
     position: absolute;
@@ -121,7 +121,7 @@ main {
     }
     .social {
         position: relative;
-        padding-top: 50px;
+        margin-top: 50px;
     }
     .right {
         padding: 0px;
@@ -130,5 +130,9 @@ main {
     }
     .arrow {
         display: none;
+    }
+    .project img {
+        width: 100%;
+        height: 100%;
     }
 }
