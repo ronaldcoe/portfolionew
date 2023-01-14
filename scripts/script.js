@@ -48,13 +48,13 @@ function hideLeft() {
     let style = window.getComputedStyle(bar);
     let arrow = document.querySelector(".arrow");
 
-    if (style.display == "block") {
+    if (style.display == "flex") {
         bar.style.display = "none"
         main.style.gridTemplateColumns = "1fr"
         arrow.style.transform = "scaleX(1)"
         arrow.style.left = "10px"
     } else  {
-        bar.style.display = "block";
+        bar.style.display = "flex";
         main.style.gridTemplateColumns = "440px 1fr"
         arrow.style.transform = "scaleX(-1)"
         arrow.style.left = "400px"

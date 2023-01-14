@@ -8,7 +8,10 @@
     --main-font: "Advent Pro";
     --font-p-size: 1rem;
 }
-
+html {
+    font-family: var(--main-font);
+    color: var(--white);
+}
 * {
     margin: 0;
     box-sizing: border-box;
